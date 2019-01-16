@@ -17,7 +17,7 @@ class Wallet {
                 } else if (type ==="-") {
                     return _money -= value;
                 } else {
-                   throw new Error("nieprawidłowy typ działania") 
+                   throw new Error("nieprawidłowy typ działania") //throw pozwala nam tworzyć nowe powiadomienia o błedach(np. w consoli)
                 }
             } else{
                 console.log(typeof value);
