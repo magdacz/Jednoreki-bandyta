@@ -1,3 +1,4 @@
+
 class Wallet {
     constructor(money) {
         let _money = money; //właściwość ukryta
@@ -13,11 +14,11 @@ class Wallet {
         this.changeWallet = (value, type = "+") => {
             if(typeof value === "number" && !isNaN(value)) {
                 if (type === "+") {
-                    return _money += value;
-                } else if (type ==="-") {
-                    return _money -= value;
+                   return _money = _money + value; //return _money += value;
+                } else if (type === "-") {
+                    return _money = _money - value;//return _money -= value;
                 } else {
-                   throw new Error("nieprawidłowy typ działania") //throw pozwala nam tworzyć nowe powiadomienia o błedach(np. w consoli)
+                   throw new Error("nieprawidłowy typ działania") 
                 }
             } else{
                 console.log(typeof value);
@@ -32,4 +33,6 @@ class Wallet {
 //console.log(wallet.changeWallet(20, "+"))
 //console.log(wallet.changeWallet(10, "-"))
 //console.log(wallet.changeWallet(NaN, "jhhggd"))
+
+
 

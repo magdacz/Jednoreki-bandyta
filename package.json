@@ -34,6 +34,7 @@
   "homepage": "https://github.com/magdacz/learning-git#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
+    "babelcli": "0.0.2-security",
     "browser-sync": "^2.24.5",
     "globstar": "^1.0.0",
     "node-sass": "^4.9.2",
